@@ -4,31 +4,33 @@ namespace ITechArt.Mentoring.MatrixLib.Core
 {
 	public class Matrix : IMatrix
 	{
+		private readonly double[] _storage;
 
-
-		private double[,] _storage;
-		public int Rows
-		{
-			get => this._storage.GetLength(0);
-		}
-		public int Columns
-		{
-			get => this._storage.GetLength(1);
-		}
+		public int Rows{get;}
+		public int Columns{get;}
 		public double this[int i, int j]
 		{
-			get => _storage[i, j];
-			set => _storage[i, j] = value;
+			get => _storage[i*this.Columns + j];
+			set => _storage[i * this.Columns + j] = value;
 		}
 
-		public Matrix(int Rows, int Columns)
+		public Matrix(int rows, int columns)
 		{
-			this._storage = new double[Rows, Columns];
+			this._storage = new double[rows * columns];
+			this.Rows = rows;
+			this.Columns = columns;
 		}
 
-		public Matrix(double[,] DoubleMatrix)
+		public Matrix(IEnumerable<double> array, int rows, int columns)
 		{
-			this._storage = DoubleMatrix;
+			if (rows * columns!=array.Count())
+			{
+				throw new ArgumentException("");
+			}
+			this._storage = array.ToArray();
+			this.Rows = rows;
+			this.Columns = columns;
+			
 		}
 	}
 }

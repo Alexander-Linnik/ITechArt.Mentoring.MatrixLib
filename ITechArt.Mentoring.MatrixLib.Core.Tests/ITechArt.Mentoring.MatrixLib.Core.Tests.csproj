@@ -20,4 +20,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ITechArt.Mentoring.MatrixLib.Core\ITechArt.Mentoring.MatrixLib.Core.csproj" />
+  </ItemGroup>
+
 </Project>

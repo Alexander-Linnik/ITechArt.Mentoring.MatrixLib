@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ITechArt.Mentoring.MatrixLib.Core
+﻿namespace ITechArt.Mentoring.MatrixLib.Core
 {
 	public static class MatrixOps
 	{
-		public static Matrix Transpose(Matrix Matrix)
+		public static Matrix Transpose(Matrix matrix)
 		{
-			var rows = Matrix.Rows;
-			var columns = Matrix.Columns;
+			var rows = matrix.Rows;
+			var columns = matrix.Columns;
 
 			var result = new Matrix(columns, rows);
 
@@ -19,7 +13,7 @@ namespace ITechArt.Mentoring.MatrixLib.Core
 			{
 				for (var j = 0; j < rows; j++)
 				{
-					result[i, j] = Matrix[j, i];
+					result[i, j] = matrix[j, i];
 				}
 			}
 			return result;
