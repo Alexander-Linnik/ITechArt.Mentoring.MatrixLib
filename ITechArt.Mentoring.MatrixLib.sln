@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITechArt.Mentoring.MatrixLib.ConsoleApp", "ITechArt.Mentoring.MatrixLib\ITechArt.Mentoring.MatrixLib.ConsoleApp.csproj", "{3B4D1047-4A85-4E4C-B268-899414BFC483}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITechArt.Mentoring.MatrixLib.ConsoleApp", "ITechArt.Mentoring.MatrixLib\ITechArt.Mentoring.MatrixLib.ConsoleApp.csproj", "{3B4D1047-4A85-4E4C-B268-899414BFC483}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITechArt.Mentoring.MatrixLib.Core", "ITechArt.Mentoring.MatrixLib.Core\ITechArt.Mentoring.MatrixLib.Core.csproj", "{75948A97-0BAE-4253-960E-EA6C54324543}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITechArt.Mentoring.MatrixLib.Core", "ITechArt.Mentoring.MatrixLib.Core\ITechArt.Mentoring.MatrixLib.Core.csproj", "{75948A97-0BAE-4253-960E-EA6C54324543}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITechArt.Mentoring.MatrixLib.Core.Tests", "ITechArt.Mentoring.MatrixLib.Core.Tests\ITechArt.Mentoring.MatrixLib.Core.Tests.csproj", "{82463502-B9AD-4D8D-B91A-3857FFC64F89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITechArt.Mentoring.MatrixLib.Core.Tests", "ITechArt.Mentoring.MatrixLib.Core.Tests\ITechArt.Mentoring.MatrixLib.Core.Tests.csproj", "{82463502-B9AD-4D8D-B91A-3857FFC64F89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITechArt.Mentoring.MatrixLib.WebAPI", "ITechArt.Mentoring.MatrixLib.WebAPI\ITechArt.Mentoring.MatrixLib.WebAPI.csproj", "{E937E93D-2B27-40B7-963E-8F323951830B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{82463502-B9AD-4D8D-B91A-3857FFC64F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82463502-B9AD-4D8D-B91A-3857FFC64F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82463502-B9AD-4D8D-B91A-3857FFC64F89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E937E93D-2B27-40B7-963E-8F323951830B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E937E93D-2B27-40B7-963E-8F323951830B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E937E93D-2B27-40B7-963E-8F323951830B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E937E93D-2B27-40B7-963E-8F323951830B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,8 +1,10 @@
-﻿namespace ITechArt.Mentoring.MatrixLib.Core
+﻿using ITechArt.Mentoring.MatrixLib.WebAPI.Interfaces;
+
+namespace ITechArt.Mentoring.MatrixLib.Core
 {
-	public static class MatrixOps
+	public class MatrixOps: IMatrixOps
 	{
-		public static Matrix Transpose(Matrix matrix)
+		public Matrix Transpose(Matrix matrix)
 		{
 			var rows = matrix.Rows;
 			var columns = matrix.Columns;
@@ -19,7 +21,7 @@
 			return result;
 		}
 
-		public static Matrix Addiction(Matrix FirstMatrix, Matrix SecondMatrix)
+		public Matrix Addiction(Matrix FirstMatrix, Matrix SecondMatrix)
 		{
 			var rowLength = FirstMatrix.Rows;
 			var columnLength = FirstMatrix.Columns;
@@ -39,7 +41,7 @@
 			return addictionResult;
 		}
 
-		public static Matrix Multiply(Matrix FirstMatrix, Matrix SecondMatrix)
+		public Matrix Multiply(Matrix FirstMatrix, Matrix SecondMatrix)
 		{
 			if (FirstMatrix.Columns != SecondMatrix.Rows)
 			{

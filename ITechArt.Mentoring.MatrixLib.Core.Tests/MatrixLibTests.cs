@@ -30,12 +30,13 @@ namespace ITechArt.Mentoring.MatrixLib.Core.Tests
 			};
 			var secondMatrix = new Matrix(new double[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, 3, 3);
 
+			MatrixOps matrixOps = new MatrixOps();
 
-			Assert.Equal(addticionResult, MatrixOps.Addiction(firstMatrix,secondMatrix));
+			Assert.Equal(addticionResult, matrixOps.Addiction(firstMatrix,secondMatrix));
 
-			Assert.Equal(multiplyResult, MatrixOps.Multiply(firstMatrix, secondMatrix));
+			Assert.Equal(multiplyResult, matrixOps.Multiply(firstMatrix, secondMatrix));
 
-			Assert.Equal(transposeResult, MatrixOps.Transpose(firstMatrix));
+			Assert.Equal(transposeResult, matrixOps.Transpose(firstMatrix));
 		}
 	}
 }

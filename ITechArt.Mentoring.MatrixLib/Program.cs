@@ -20,7 +20,7 @@ public class Program
 
 		var secondMatrix = new Matrix(new double[]{1,2,3,4,5,6,7,8,9},3,3);
 
-		//Console.WriteLine(secondMatrix[1,0]);
+		Console.WriteLine(secondMatrix[1,2]);
 
 		var multiplyResult = MatrixOps.Multiply(firstMatrix, secondMatrix);
 
